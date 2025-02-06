@@ -43,3 +43,22 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+// JavaScript to handle form submission and display success message
+document.getElementById('newsletterForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+
+  setTimeout(function () {
+
+    document.querySelector('.email-field').value = '';
+
+
+    document.getElementById('successMessage').style.display = 'block';
+
+
+    setTimeout(function () {
+      document.getElementById('successMessage').style.display = 'none';
+    }, 5000);
+  }, 500); 
+});
