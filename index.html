@@ -839,13 +839,14 @@
 
             <h2 class="h2 section-title">Subscribe for offers and news</h2>
 
-            <form action="" class="newsletter-form">
-              <input type="email" name="email_address" placeholder="Enter Your Email" aria-label="email"
-                class="email-field">
-
+            <form action="" class="newsletter-form" id="newsletterForm">
+              <input type="email" name="email_address" placeholder="Enter Your Email" aria-label="email" required class="email-field">
               <button type="submit" class="newsletter-btn">Subscribe Now</button>
+              <!-- Success Message -->
+              <p class="success-message" id="successMessage" style="display: none; color: green; margin-top: 10px; font-size: 14px;">
+                Thank you for subscribing! Stay tuned for exclusive updates.
+              </p>
             </form>
-
           </div>
 
         </div>
